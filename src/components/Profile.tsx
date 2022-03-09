@@ -58,7 +58,7 @@ const Profile = () => {
   return (
     <Container>
       <Photo>
-        <img src="https://github.com/codekyz/new-portfolio/blob/main/public/%EA%B9%80%EC%9C%A4%EC%A0%95.jpg?raw=true" />
+        <img src="https://github.com/codekyz/new-portfolio/blob/main/src/assets/%EA%B9%80%EC%9C%A4%EC%A0%95.jpg?raw=true" />
       </Photo>
       <GreetingBox>
         <Greeting>
