@@ -3,11 +3,15 @@ import styled from "styled-components";
 import { isDarkState } from "../atoms";
 
 const Nav = styled.header`
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+  backdrop-filter: blur(30px);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 65px;
   padding: 10px;
   margin-bottom: 30px;
   background-color: ${(props) => props.theme.textColor};
