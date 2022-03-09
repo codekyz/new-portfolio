@@ -8,8 +8,8 @@ export const theme: DefaultTheme = {
 };
 
 export const darkTheme: DefaultTheme = {
-  bgColor: "#2d3436",
-  textColor: "#dfe6e9",
-  accentColor: "#0984e3",
-  hoverColor: "#fdcb6e",
+  bgColor: "#2f3640",
+  textColor: "#f5f6fa",
+  accentColor: "#78e08f",
+  hoverColor: "#4a69bd",
 };

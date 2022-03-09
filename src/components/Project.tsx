@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Title = styled.h1`
+  padding: 5px 5px;
   margin-top: 20px;
   font-size: 24px;
   border-bottom: 5px solid ${(props) => props.theme.hoverColor};
@@ -25,20 +26,45 @@ const Thum = styled.div`
   overflow: hidden;
   margin-bottom: 10px;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+  &:hover {
+    opacity: 0.8;
+    border: 1px solid ${(props) => props.theme.hoverColor};
+  }
 `;
 
 const Description = styled.div`
   p:first-child {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     margin-bottom: 5px;
+    a {
+      margin-left: auto;
+    }
   }
   p:last-child {
     font-size: 15px;
+  }
+`;
+
+const Button = styled.button`
+  font-family: "GowunBatang-Bold";
+  border: none;
+  padding: 3px 10px;
+  margin-right: 5px;
+  background-color: ${(props) => props.theme.accentColor};
+  color: ${(props) => props.theme.bgColor};
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  &:hover {
+    background-color: ${(props) => props.theme.hoverColor};
   }
 `;
 
@@ -54,7 +80,12 @@ const Project = () => {
             </Thum>
           </a>
           <Description>
-            <p>📑 Things To Do</p>
+            <p>
+              📑 Things To Do
+              <a href="https://github.com/codekyz/todolist-react">
+                <Button>GitHub</Button>
+              </a>
+            </p>
             <p>React, TypeScript, Recoil, localStorage</p>
           </Description>
         </ProjectCard>
@@ -66,7 +97,12 @@ const Project = () => {
             </Thum>
           </a>
           <Description>
-            <p>📑 하루의 시작</p>
+            <p>
+              📑 하루의 시작
+              <a href="https://github.com/codekyz/beginning-of-the-day">
+                <Button>GitHub</Button>
+              </a>
+            </p>
             <p>React, TypeScript, localStorage</p>
           </Description>
         </ProjectCard>
@@ -78,7 +114,12 @@ const Project = () => {
             </Thum>
           </a>
           <Description>
-            <p>📑 Super Converter</p>
+            <p>
+              📑 Super Converter
+              <a href="https://github.com/codekyz/converter-react">
+                <Button>GitHub</Button>
+              </a>
+            </p>
             <p>React</p>
           </Description>
         </ProjectCard>
@@ -90,7 +131,12 @@ const Project = () => {
             </Thum>
           </a>
           <Description>
-            <p>📑 Momentum-js</p>
+            <p>
+              📑 Momentum-js
+              <a href="https://github.com/codekyz/momentum-js">
+                <Button>GitHub</Button>
+              </a>
+            </p>
             <p>JavaScript</p>
           </Description>
         </ProjectCard>
@@ -102,7 +148,12 @@ const Project = () => {
             </Thum>
           </a>
           <Description>
-            <p>📑 Paint</p>
+            <p>
+              📑 Paint
+              <a href="https://github.com/codekyz/paint-js">
+                <Button>GitHub</Button>
+              </a>
+            </p>
             <p>JavaScript</p>
           </Description>
         </ProjectCard>
@@ -114,7 +165,12 @@ const Project = () => {
             </Thum>
           </a>
           <Description>
-            <p>📑 Time to go home</p>
+            <p>
+              📑 Time to go home
+              <a href="https://github.com/codekyz/time-to-go-home">
+                <Button>GitHub</Button>
+              </a>
+            </p>
             <p>JavaScript</p>
           </Description>
         </ProjectCard>

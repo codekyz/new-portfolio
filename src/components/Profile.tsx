@@ -26,7 +26,6 @@ const Greeting = styled.div`
     padding: 0 5px;
     display: inline;
     font-size: 24px;
-    font-weight: 800;
     border-bottom: 5px solid ${(props) => props.theme.hoverColor};
   }
   p {
@@ -82,7 +81,7 @@ const Profile = () => {
             <a href="https://velog.io/@kyz0111" target="_blank">
               <Button>VELOG</Button>
             </a>
-            <Button>이력서 다운로드</Button>
+            {/* <Button>이력서 다운로드</Button> */}
           </Buttons>
         </Greeting>
       </GreetingBox>

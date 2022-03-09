@@ -1,4 +1,6 @@
+import { useRecoilState } from "recoil";
 import styled from "styled-components";
+import { isDarkState } from "../atoms";
 
 const Nav = styled.header`
   display: flex;
@@ -24,11 +26,15 @@ const Button = styled.button`
 `;
 
 const Header = () => {
+  const [isDark, setIsDark] = useRecoilState(isDarkState);
+
+  const handleModeToggle = () => {
+    setIsDark((prev) => !prev);
+  };
   return (
     <Nav>
       <Button>🏡</Button>
-      <Button>🌙</Button>
-      <Button>🌞</Button>
+      <Button onClick={handleModeToggle}>{isDark ? "🌞" : "🌙"}</Button>
     </Nav>
   );
 };
