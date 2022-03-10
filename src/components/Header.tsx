@@ -12,10 +12,13 @@ const Nav = styled.header`
   align-items: center;
   width: 100%;
   height: 65px;
-  padding: 10px;
+  padding: 10px 30px;
   margin-bottom: 30px;
   background-color: ${(props) => props.theme.textColor};
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  Button:last-child {
+    margin-left: auto;
+  }
 `;
 
 const Button = styled.button`
@@ -37,7 +40,10 @@ const Header = () => {
   };
   return (
     <Nav>
-      <Button>🏡</Button>
+      <a href="#">
+        <Button title="HOME">🏡</Button>
+      </a>
+      {/* <Button title="PROFILE">📂</Button> */}
       <Button onClick={handleModeToggle}>{isDark ? "🌞" : "🌙"}</Button>
     </Nav>
   );

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Header from "./Header";
+import Intro from "./Intro";
 import Profile from "./Profile";
 import Project from "./Project";
 
@@ -14,8 +15,9 @@ const Portfolio = () => {
   return (
     <Wrapper>
       <Header />
-      <Profile />
+      <Intro />
       <Project />
+      <Profile />
     </Wrapper>
   );
 };
