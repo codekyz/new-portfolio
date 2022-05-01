@@ -98,8 +98,8 @@ const Intro = () => {
             유저에게 편안한 서비스와 경험을 제공할 수 있는 개발자가 되고
             싶습니다.
             <br />
-            <br />
-            📧codekyz0111@gmail.com
+            {/* <br />
+            📧codekyz0111@gmail.com */}
           </p>
           <Buttons>
             <a
